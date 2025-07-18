@@ -156,3 +156,11 @@
  * @typedef {Object} ProviderPreferences
  * @description OpenRouter provider routing preferences (documentation at: openrouter.ai/docs/provider-routing)
  */
+
+/**
+ * @typedef {Object} CheckResponse
+ * @property {Boolean} pass
+ * @property {String} hint
+ */
+
+export const Types = {};
