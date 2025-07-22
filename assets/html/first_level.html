@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style/reset.css">
     <script type="module" src="../javascript/levels/first_level/validation_level_one.js"></script>
     <script type="module" src="../javascript/levels/first_level/first_level_LLM.js"></script>
+    <link rel="stylesheet" href="../style/default.css">
 </head>
 
 <body>
@@ -15,22 +16,47 @@
         <h1>
             Model Learning
         </h1>
+        <div>
+            <button id="menu">Open API Config</button>
+            <button id="chat_menu_button">Message Bot</button>
+        </div>
     </header>
+
+    <aside id="api_menu">
+        <h2>Settings</h2>
+        <p>An API key for openrouter is necessary so that the model can be used</p>
+        <label for="apiKey">API KEY: </label>
+        <input type="text" id="apiKey">
+
+        <p>Enter a model provided by openrouter so that answers can be given. If no model is given, we default to
+            deepseek
+            v3.</p>
+        <label for="model">OpenRouter model: </label>
+        <input type="text" id="model">
+    </aside>
 
     <main>
         <section id="ui">
-            <button id="menu">Open API Config</button>
 
             <label for="sequence">Sequence: </label>
             <input type="text" id="sequence">
 
             <button id="validation">Validate</button>
-            <button id="chat_menu_button">Message Bot</button>
-        </section>
-        <section id="LLMoutput">
-
         </section>
     </main>
+
+    <aside id="chat_menu">
+        <div id="message_area">
+            <button id="message_button">Send Message</button>
+            <textarea id="message_bot" cols="30" rows="10"></textarea>
+        </div>
+        <div id="hint_display">
+            <p>No message received</p>
+        </div>
+    </aside>
+    <footer>
+        <p>A game by Timmy and Valle</p>
+    </footer>
 </body>
 
 </html>

@@ -1,12 +1,10 @@
 import { callOpenRouter } from "../../LLM_utils.js";
 import * as Types from "../../types.js";
-import { insert_templates } from "../../insert_recurring.js";
-
-await insert_templates();
 
 /** @type {HTMLElement} */
 const MENU = document.getElementById("api_menu");
 MENU.hidden = true;
+console.log(MENU);
 
 /** @type {HTMLElement} */
 const CHAT_MENU = document.getElementById("chat_menu");
